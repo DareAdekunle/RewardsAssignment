@@ -1,13 +1,15 @@
-## 📘 `README.md` — Retention Incentive Simulator
+## `README.md` — Retention Incentive Simulator
 
-
+```markdown
 # 🎓 Retention Incentive Simulator
 
 This project models and compares learner retention across multiple scenarios using incentive-based interventions. It combines an interactive **Streamlit app**, a **custom CSV uploader**, and an **explanatory Jupyter notebook** to help decision-makers evaluate the financial and behavioral impact of incentive strategies.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
+
+```
 
 .
 ├── main.py                 # Streamlit app for scenario simulation
@@ -17,16 +19,18 @@ This project models and compares learner retention across multiple scenarios usi
 ├── README.md              # You are here
 └── sample\_dropoffs.csv    # (Optional) Example custom drop-off input
 
+````
+
 ---
 
-## 🚀 Features
+## Features
 
-- 📊 Simulates learner retention over time
-- 💸 Quantifies revenue, incentive cost, and net financial impact
-- 📈 Interactive plots using Plotly
-- 📁 Supports custom drop-off CSV uploads
-- 🧠 Auto-generated executive recommendations
-- 📘 Includes a well-documented analysis notebook
+- Simulates learner retention over time
+- Quantifies revenue, incentive cost, and net financial impact
+- Interactive plots using Plotly
+- Supports custom drop-off CSV uploads
+- Auto-generated executive recommendations
+- Includes a well-documented analysis notebook
 
 ---
 
@@ -39,7 +43,7 @@ git clone https://github.com/yourusername/retention-incentive-simulator.git
 cd retention-incentive-simulator
 ````
 
-### 🔧 2. Create & activate environment
+### 2. Create & activate environment
 
 Using Conda:
 
@@ -59,24 +63,37 @@ pip install -r requirements.txt
 
 ---
 
-## 🖥 Run the App
+## Run the Apps
 
-### ✅ Run scenario-based Streamlit simulator
+### Run scenario-based Streamlit simulator
 
 ```bash
-streamlit run 1_Retention_Incentive_Simulator.py
+streamlit run main.py
+```
+
+### Run the custom CSV simulator
+
+```bash
+streamlit run custom_csv.py
 ```
 
 ---
 
-## 📓 Open the Jupyter Notebook
+## Open the Jupyter Notebook
 
 ```bash
 jupyter notebook retention_analysis.ipynb
 ```
 
+The notebook includes:
 
-## 🧾 Sample CSV Format for Drop-offs
+* Clear markdown explanations
+* Actions, observations, and recommendations
+* Financial summaries and executive tables
+
+---
+
+## Sample CSV Format for Drop-offs
 
 Upload a CSV like this for the custom scenario:
 
@@ -94,10 +111,19 @@ Month,Drop-off Rate (%)
 
 ---
 
-## 🧠 Authors & Attribution
+## Authors & Attribution
 
 * **Author**: \Oludare Adekunle
 * Based on assignment from the **ALX Rewards Modelling Specialist Program**
 * Developed with ❤️ using Python, Streamlit, and Plotly
 
 ---
+
+## 📃 License
+
+MIT License – see `LICENSE` file for details.
+
+```
+
+---
+
