@@ -36,9 +36,9 @@ This project models and compares learner retention across multiple scenarios usi
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 🐍 1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/retention-incentive-simulator.git
@@ -115,7 +115,7 @@ Month,Drop-off Rate (%)
 
 ## Authors & Attribution
 
-* **Author**: \Oludare Adekunle
+* **Author**: Oludare Adekunle
 * Based on assignment from the **ALX Rewards Modelling Specialist Program**
 * Developed using Python, Streamlit, and Plotly
 
