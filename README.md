@@ -11,6 +11,8 @@ This project models and compares learner retention across multiple scenarios usi
 
 ```
 
+
+```markdown
 .
 ├── main.py                 # Streamlit app for scenario simulation
 ├── custom\_csv.py          # Streamlit app for CSV-based retention modeling
@@ -19,7 +21,7 @@ This project models and compares learner retention across multiple scenarios usi
 ├── README.md              # You are here
 └── sample\_dropoffs.csv    # (Optional) Example custom drop-off input
 
-````
+```
 
 ---
 
@@ -41,7 +43,7 @@ This project models and compares learner retention across multiple scenarios usi
 ```bash
 git clone https://github.com/yourusername/retention-incentive-simulator.git
 cd retention-incentive-simulator
-````
+```
 
 ### 2. Create & activate environment
 
@@ -115,15 +117,7 @@ Month,Drop-off Rate (%)
 
 * **Author**: \Oludare Adekunle
 * Based on assignment from the **ALX Rewards Modelling Specialist Program**
-* Developed with ❤️ using Python, Streamlit, and Plotly
-
----
-
-## 📃 License
-
-MIT License – see `LICENSE` file for details.
-
-```
+* Developed using Python, Streamlit, and Plotly
 
 ---
 
