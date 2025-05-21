@@ -14,6 +14,8 @@ Upload a custom CSV with two columns:
 This page assumes you want full control over when drop-offs occur.
 """)
 
+dropoff_file = st.sidebar.file_uploader("Upload CSV with Drop-off Rates", type=["csv"], key="custom_csv_upload")
+
 # --- SIDEBAR PARAMETERS ---
 st.sidebar.header("Simulation Settings")
 initial_learners = st.sidebar.number_input("Initial learners", 1000, 1000000, 1000, 1000)
@@ -30,7 +32,6 @@ st.sidebar.subheader("Scenario 2: Improved Retention")
 incentive_effect_2 = st.sidebar.slider("Retention improvement (%) - Scenario 2", 0, 100, 100)
 redeem_rate_2 = st.sidebar.slider("Redeem rate (%) - Scenario 2", 0, 100, 70)
 
-dropoff_file = st.sidebar.file_uploader("Upload CSV with Drop-off Rates", type=["csv"], key="custom_csv_upload")
 
 if dropoff_file is not None:
     months_df = pd.DataFrame({"Month": list(range(1, duration_months + 1))})
