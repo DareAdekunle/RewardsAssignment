@@ -12,18 +12,18 @@ allowing you to estimate financial impact and identify the optimal incentive str
 """)
 
 # Sidebar Inputs
-st.sidebar.subheader("GLOBAL PARAMETERS")
+st.sidebar.subheader("GLOBAL SETTINGS")
 redeemers_stay_full = st.sidebar.checkbox("Assume redeemers stay to end of program", value=True)
-revenue_per_month = st.sidebar.number_input("Revenue per learner/month ($)", 1.0, 10.0, value=5.0)
-incentive_cost = st.sidebar.number_input("Incentive cost per learner ($)", 0.0, 10.0, value=5.0)
+revenue_per_month = st.sidebar.number_input("Revenue per learner/month ($)", 0.0, 100.0, value=5.0)
+incentive_cost = st.sidebar.number_input("Incentive cost per learner ($)", 0.0, 100.0, value=5.0)
 initial_learners = st.sidebar.number_input("Initial learners", 100, 10000, value=1000)
 duration_months = st.sidebar.slider("Program duration (months)", 4, 12, value=8)
 drop_month = st.sidebar.slider("Month of incentive offer", 2, duration_months - 1, 3)
-drop_off_rate = st.sidebar.slider("Major drop-off rate in incentive month (%)", 5, 50, 30)
-organic_drop_pre = st.sidebar.slider("Organic drop-off rate before incentive (%)", 0, 20, 0)
-organic_drop_post = st.sidebar.slider("Organic drop-off rate after incentive (%)", 0, 20, 0)
+drop_off_rate = st.sidebar.slider("Major drop-off rate in incentive month (%)", 0, 100, 30)
+organic_drop_pre = st.sidebar.slider("Organic drop-off rate before incentive (%)", 0, 100, 0)
+organic_drop_post = st.sidebar.slider("Organic drop-off rate after incentive (%)", 0, 100, 0)
 
-st.sidebar.subheader("SCENARIO PARAMETERS")
+st.sidebar.subheader("SCENARIO SETTINGS")
 st.sidebar.subheader("Scenario 1. Intervention, no effect")
 incentive_effect_1 = st.sidebar.slider("Retention improvement from incentive (%)", 0, 100, 0)
 redeem_rate_1 = st.sidebar.slider("% of eligible learners who redeem reward", 0, 100, 50)
@@ -31,7 +31,7 @@ redeem_rate_1 = st.sidebar.slider("% of eligible learners who redeem reward", 0,
 
 st.sidebar.subheader("Scenario 2. Intervention, improved retention")
 incentive_effect_2 = (st.sidebar.slider("Retention improvement from incentive (%)", 0, 100, 100))
-redeem_rate_2 = st.sidebar.slider("% of eligible learners who redeem reward", 0, 100, 70)
+redeem_rate_2 = st.sidebar.slider("% of eligible learners who redeem reward", 0, 100, 100)
 
 # Dropoff Setup
 monthly_drop = ([organic_drop_pre / 100] 
