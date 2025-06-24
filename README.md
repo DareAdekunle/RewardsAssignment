@@ -1,10 +1,11 @@
-```markdown
+
 # Retention Incentive Simulator
+
 
 This project models and compares learner retention across multiple scenarios using incentive-based interventions. It combines an interactive **Streamlit app**, a **custom CSV uploader**, and an **explanatory Jupyter notebook** to help decision-makers evaluate the financial and behavioral impact of incentive strategies.
 
 ---
-```
+
 
 ## Project Structure
 
