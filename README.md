@@ -1,5 +1,3 @@
-## `README.md` — Retention Incentive Simulator
-
 ```markdown
 # Retention Incentive Simulator
 
